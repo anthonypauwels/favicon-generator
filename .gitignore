@@ -1,0 +1,91 @@
+# Vendors #
+###########
+vendor/
+node_modules/
+bower_components/
+
+# Compiled source #
+###################
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Windows Installer files #
+###########################
+*.cab
+*.msi
+*.msm
+*.msp
+
+# Packages #
+############
+# it's better to unpack these files and commit the raw source
+# git has its own built in compression methods
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Env, log and sql files #
+##########################
+.env
+*.sql
+*.log
+
+# Thumbnails #
+##############
+._*
+
+# Windows image file caches #
+#############################
+Thumbs.db
+ehthumbs.db
+
+# Folder config file #
+Desktop.ini
+
+# Recycle Bin used on file shares #
+###################################
+$RECYCLE.BIN/
+
+# Windows shortcuts #
+#####################
+*.lnk
+
+# OSX #
+#######
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Files that might appear in the root of a volume #
+###################################################
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share #
+#######################################################
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+.idea
+
+# Project specific #
+####################
+db/
+bin/
+conf/
+tmp/
