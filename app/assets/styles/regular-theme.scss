@@ -1,0 +1,277 @@
+.header {
+    padding: 40px 20px 20px 20px;
+
+    h1 {
+        display: inline-block;
+        font-size: 1.7rem;
+    }
+}
+
+button {
+    border: 1px solid transparent;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+    font-size: 1rem;
+    padding: .8rem 1.4rem;
+    width: auto;
+
+    &:hover, &:focus, &:active {
+        outline: none;
+    }
+
+    svg {
+        transition: fill .3s ease-in-out;
+    }
+}
+
+label {
+    span {
+        margin-left: 5px;
+        font-size: 1rem;
+    }
+}
+
+input[type="checkbox"] {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0;
+    transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+
+    &:before {
+        transition: border-right .3s ease-in-out, border-bottom .3s ease-in-out;
+    }
+}
+
+#drop-area {
+    .hint {
+        h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+        }
+
+        button {
+            padding: 10px 20px;
+        }
+    }
+
+    &.dragover {
+        transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+
+        h2 {
+            transition: color .3s ease-in-out,background-color .3s ease-in-out,border-color .3s ease-in-out,box-shadow .3s ease-in-out;
+        }
+    }
+}
+
+.footer {
+    .footer-left {
+        line-height: 45px;
+
+        input[type="checkbox"] {
+            top: 4px;
+        }
+    }
+
+    .footer-right {
+        height: 45px;
+        line-height: 45px;
+
+        .tooltip {
+            font-size: 0.8rem;
+            border-radius: 3px;
+            padding: .4rem;
+            line-height: 1rem;
+            transition: transform .15s ease-in-out, opacity .3s ease-in-out;
+
+            &:after {
+                border-top : 4px solid transparent;
+                border-bottom : 6px solid transparent;
+            }
+        }
+    }
+}
+
+@media ( prefers-color-scheme: light ) {
+    body {
+        background-color: #ECEFF1;
+        color: #424242;
+    }
+
+    .header {
+        h1 {
+            color: #424242;
+        }
+    }
+
+    button {
+        background-color: #42A5F5;
+        border: 1px solid #1E88E5;
+        color: #FAFAFA;
+
+        svg {
+            fill: #FAFAFA;
+        }
+
+        &:hover, &:focus, &:active {
+            background-color: #ECEFF1;
+            color: #42A5F5;
+            border: 1px solid #1E88E5;
+
+            svg {
+                fill: #42A5F5;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        border-color: #1E88E5;
+
+        &:before {
+            border-bottom: 0.2rem solid transparent;
+            border-right: 0.2rem solid transparent;
+        }
+
+        &:checked {
+            border-color: #1E88E5;
+            background: #42A5F5;
+
+            &:before {
+                border-bottom: 0.15rem solid #FAFAFA;
+                border-right: 0.15rem solid #FAFAFA;
+            }
+        }
+    }
+
+    #drop-area {
+        border: 4px dashed #9E9E9E;
+
+        .hint {
+            button {
+                background: transparent;
+                border: 1px solid #424242;
+                color: #424242;
+
+                &:hover, &:focus, &:active {
+                    color: #FAFAFA;
+                    border: 1px solid #1E88E5;
+                    background: #42A5F5;
+                }
+            }
+        }
+
+        &.dragover {
+            border: 4px dashed #42A5F5;
+
+            h2 {
+                color: #42A5F5;
+            }
+        }
+    }
+
+    .footer {
+        .footer-right {
+            .tooltip {
+                color: #FFFFFF;
+                background-color: rgba(0, 0, 0, .4);
+
+                &:after {
+                    border-left : 10px solid rgba(0, 0, 0, .4);
+                }
+            }
+        }
+    }
+}
+
+@media ( prefers-color-scheme: dark ) {
+    body {
+        background-color: #121212;
+        color: #E0E0E0;
+    }
+
+    .header {
+        h1 {
+            color: #E0E0E0;
+        }
+    }
+
+    button {
+        background-color: #42A5F5;
+        border: 1px solid transparent;
+        color: #121212;
+
+        svg {
+            fill: #121212;
+            transition: fill .3s ease-in-out;
+        }
+
+        &:hover, &:focus, &:active {
+            background-color: #121212;
+            color: #42A5F5;
+            border: 1px solid #1E88E5;
+
+            svg {
+                fill: #42A5F5;
+            }
+        }
+    }
+
+    input[type="checkbox"] {
+        border-color: #42A5F5;
+        background: transparent;
+
+        &:before {
+            border-bottom: 0.2rem solid transparent;
+            border-right: 0.2rem solid transparent;
+        }
+
+        &:checked {
+            border-color: darken(#42A5F5, 5%);
+            background: #42A5F5;
+
+            &:before {
+                border-bottom: 0.15rem solid #121212;
+                border-right: 0.15rem solid #121212;
+            }
+        }
+    }
+
+    #drop-area {
+        border: 4px dashed #E0E0E0;
+
+        .hint {
+            button {
+                background: transparent;
+                border: 1px solid #E0E0E0;
+                color: #E0E0E0;
+
+                &:hover, &:focus, &:active {
+                    color: #121212;
+                    border: 1px solid #1E88E5;
+                    background: #42A5F5;
+                }
+            }
+        }
+
+        &.dragover {
+            border: 4px dashed #42A5F5;
+
+            h2 {
+                color: #42A5F5;
+            }
+        }
+    }
+
+    .footer {
+        .footer-right {
+            .tooltip {
+                color: #FFFFFF;
+                background-color: rgba(255, 255, 255, .4);
+
+                &:after {
+                    border-left : 10px solid rgba(255, 255, 255, .4);
+                }
+            }
+        }
+    }
+}

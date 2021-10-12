@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Favicon Generator</title>
+    <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="./styles/regular-theme.css" id="link-theme">
+    <meta http-equiv="Content-Security-Policy" content="script-src 'nonce-b5z2cqd2'"/>
+</head>
+<body>
+    <header class="header">
+        <h1>Favicon Generator</h1>
+    </header>
+
+    <main class="main">
+        <div id="drop-area">
+            <div class="hint">
+                <h2>Drop icon to generate</h2>
+                <div class="word-separator">or</div>
+                <button id="select-file">Select file</button>
+                <input type="file" id="input-file" accept=".svg,.png,.bmp,.jpg,.jpeg,.gif">
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-left">
+            <label>
+                <input type="checkbox" id="zip-folder"> <span>Zip folder</span>
+            </label>
+        </div>
+
+        <div class="footer-right">
+            <div class="tooltip" id="tooltip">
+                In the clipboard
+            </div>
+
+            <button id="copy-code">Get the <svg width="20" height="11" viewBox="0 0 20 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.43781 5.57715L1.97296 5.74805L2.43781 5.91211L6.1839 7.16309V9.01562L0.134094 6.50684V4.96875L6.1839 2.45996V4.30566L2.43781 5.57715Z"/>
+                <path d="M9.0703 10.8545H7.2998L11.0254 0.046875H12.7959L9.0703 10.8545Z"/>
+                <path d="M13.6247 4.29883V2.45996L19.777 4.96191V6.51367L13.6247 9.02246V7.17676L17.5417 5.86426L17.9587 5.72754L17.5485 5.59082L13.6247 4.29883Z"/>
+            </svg> code</button>
+        </div>
+    </footer>
+
+    <script nonce="b5z2cqd2" src="./scripts/main.js"></script>
+</body>
+</html>

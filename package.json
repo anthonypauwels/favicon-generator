@@ -1,0 +1,54 @@
+{
+  "name": "favicon-generator",
+  "version": "0.1.0",
+  "description": "A simple favicon generator",
+  "author": "Anthony Pauwels <hello@anthonypauwels.be>",
+  "license": "ISC",
+  "homepage": "./",
+  "main": "./app/main.js",
+  "keywords": [
+    "favicon", "generator"
+  ],
+  "build": {
+    "appId": "be.anthonypauwels.favicon-generator",
+    "productName": "Favicon Generator",
+    "files": [
+      "package.json",
+      "app/**/*",
+      "node_modules"
+    ],
+    "mac": {
+      "target": "dmg",
+      "category": "public.app-category.utilities"
+    },
+    "win": {
+      "target": "nsis"
+    },
+    "linux": {
+      "target": "AppImage",
+      "category": "Utility"
+    }
+  },
+  "scripts": {
+    "serve": "electron .",
+    "development": "mix",
+    "watch": "mix watch",
+    "watch-poll": "mix watch -- --watch-options-poll=1000",
+    "hot": "mix watch --hot",
+    "production": "mix --production",
+    "pack": "electron-builder --dir",
+    "dist": "electron-builder"
+  },
+  "devDependencies": {
+    "electron": "^14.0.1",
+    "laravel-mix": "^6.0.31",
+    "sass": "^1.42.1",
+    "sass-loader": "^12.1.0",
+    "electron-builder": "^22.13.1"
+  },
+  "dependencies": {
+    "sharp": "^0.29.1",
+    "xmldom": "^0.6.0",
+    "zip-dir": "^2.0.0"
+  }
+}
