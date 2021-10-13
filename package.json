@@ -5,7 +5,7 @@
   "author": "Anthony Pauwels <hello@anthonypauwels.be>",
   "license": "ISC",
   "homepage": "./",
-  "main": "./app/main.js",
+  "main": "./build/main.js",
   "keywords": [
     "favicon", "generator"
   ],
@@ -14,7 +14,7 @@
     "productName": "Favicon Generator",
     "files": [
       "package.json",
-      "app/**/*",
+      "build/**/*",
       "node_modules"
     ],
     "mac": {
