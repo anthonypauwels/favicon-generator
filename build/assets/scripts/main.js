@@ -2,6 +2,12 @@ import { ipcRenderer } from 'electron';
 import { click, drag, change, find } from './helpers';
 import storage from './storage';
 
+if ( navigator.userAgent.indexOf('Macintosh') !== -1 ) {
+    document.body.classList.add('mac');
+} else {
+    document.body.classList.add('win');
+}
+
 const linkTheme = find('#link-theme');
 
 function changeTheme(theme)

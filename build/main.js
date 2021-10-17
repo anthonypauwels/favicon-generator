@@ -109,5 +109,6 @@ ipcMain.on('generate-images', async (event, payload) => {
 
     event.reply( 'favicon-generated', true );
 
+    await shell.openPath( path.parse( destination_path ).dir );
     shell.showItemInFolder( destination_path );
 } );
