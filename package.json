@@ -37,7 +37,8 @@
     "hot": "mix watch --hot",
     "production": "mix --production",
     "pack": "electron-builder --dir",
-    "dist": "electron-builder"
+    "dist": "electron-builder",
+    "build": "mix --production && electron-builder"
   },
   "devDependencies": {
     "electron": "^14.0.1",

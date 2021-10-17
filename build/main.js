@@ -13,7 +13,7 @@ function createWindow ()
         titleBarStyle: 'hiddenInset',
         icon: path.join( __dirname, './render/images/icon.ico' ),
         width: 600,
-        height: 450,
+        height: process.platform === 'darwin' ? 450 : 480,
         resizable: false,
         webPreferences: {
             nodeIntegration: true,

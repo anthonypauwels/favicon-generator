@@ -12,24 +12,15 @@ body {
     overflow: hidden;
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
 }
 
 .header {
     -webkit-app-region: drag;
-    padding: 20px;
 
     h1 {
         margin: 0;
         padding: 0;
-    }
-}
-
-body {
-    &.mac {
-        .header {
-            padding: 40px 20px 20px 20px;
-        }
     }
 }
 

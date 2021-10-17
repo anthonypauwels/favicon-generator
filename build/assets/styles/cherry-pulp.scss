@@ -1,11 +1,21 @@
 body {
     background-color: #efbebd;
     color: #FFFFFF;
+    
+    &.mac {
+        .header {
+            padding: 40px 20px 20px 20px;
+        }
+    }
+
+    &:not(.mac) {        
+        .header {
+            padding: 20px;
+        }
+    }
 }
 
 .header {
-    padding: 40px 20px 20px 20px;
-
     h1 {
         display: inline-block;
         font-size: 1.7rem;

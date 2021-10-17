@@ -1,6 +1,18 @@
-.header {
-    padding: 40px 20px 20px 20px;
+body {
+    &.mac {
+        .header {
+            padding: 40px 20px 20px 20px;
+        }
+    }
 
+    &:not(.mac) {        
+        .header {
+            padding: 20px;
+        }
+    }
+}
+
+.header {
     h1 {
         display: inline-block;
         font-size: 1.7rem;
