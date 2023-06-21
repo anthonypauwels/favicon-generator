@@ -2,9 +2,9 @@
 Small Electron based app to generate favicon in different formats.
 
 ## Screenshots
-Regular Light Theme  | Regular Dark Theme  | Cherry Pulp Theme
-------------- | ------------- | -------------
-![Regular Light Theme](https://i.postimg.cc/F7NW169L/regular-light-theme-0-1-0.png "Regular Light Theme")  | ![Regular Dark Theme](https://i.postimg.cc/5jwK4JMJ/regular-dark-theme-0-1-0.png "Regular Dark Theme")  | ![Cherry Pulp Theme](https://i.postimg.cc/5QMPB7LD/cherrypulp-theme-0-1-0.png "Cherry Pulp Theme")
+Regular Light Theme | Regular Dark Theme
+------------- | -------------
+![Regular Light Theme](https://i.postimg.cc/F7NW169L/regular-light-theme-0-1-0.png "Regular Light Theme")  | ![Regular Dark Theme](https://i.postimg.cc/5jwK4JMJ/regular-dark-theme-0-1-0.png "Regular Dark Theme")
 
 ## Installation
 Check for the latest builds on [release section](https://github.com/anthonypauwels/favicon-generator/releases). You can also clone the repository then run the following npm command : 
