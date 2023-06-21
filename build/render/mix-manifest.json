@@ -1,6 +1,7 @@
 {
     "/scripts/main.js": "/scripts/main.js",
     "/styles/main.css": "/styles/main.css",
-    "/styles/cherry-pulp.css": "/styles/cherry-pulp.css",
-    "/styles/regular-theme.css": "/styles/regular-theme.css"
+    "/styles/user-preference.css": "/styles/user-preference.css",
+    "/styles/dark-theme.css": "/styles/dark-theme.css",
+    "/styles/light-theme.css": "/styles/light-theme.css"
 }

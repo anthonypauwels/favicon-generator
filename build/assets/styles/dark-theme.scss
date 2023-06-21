@@ -1,0 +1,90 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.header {
+    h1 {
+        color: #E0E0E0;
+    }
+}
+
+button {
+    background-color: #42A5F5;
+    border: 1px solid transparent;
+    color: #121212;
+
+    svg {
+        fill: #121212;
+        transition: fill .3s ease-in-out;
+    }
+
+    &:hover, &:focus, &:active {
+        background-color: #121212;
+        color: #42A5F5;
+        border: 1px solid #1E88E5;
+
+        svg {
+            fill: #42A5F5;
+        }
+    }
+}
+
+input[type="checkbox"] {
+    border-color: #42A5F5;
+    background: transparent;
+
+    &:before {
+        border-bottom: 0.2rem solid transparent;
+        border-right: 0.2rem solid transparent;
+    }
+
+    &:checked {
+        border-color: darken(#42A5F5, 5%);
+        background: #42A5F5;
+
+        &:before {
+            border-bottom: 0.15rem solid #121212;
+            border-right: 0.15rem solid #121212;
+        }
+    }
+}
+
+#drop-area {
+    border: 4px dashed #E0E0E0;
+
+    .hint {
+        button {
+            background: transparent;
+            border: 1px solid #E0E0E0;
+            color: #E0E0E0;
+
+            &:hover, &:focus, &:active {
+                color: #121212;
+                border: 1px solid #1E88E5;
+                background: #42A5F5;
+            }
+        }
+    }
+
+    &.dragover {
+        border: 4px dashed #42A5F5;
+
+        h2 {
+            color: #42A5F5;
+        }
+    }
+}
+
+.footer {
+    .footer-right {
+        .tooltip {
+            color: #FFFFFF;
+            background-color: rgba(255, 255, 255, .4);
+
+            &:after {
+                border-left : 10px solid rgba(255, 255, 255, .4);
+            }
+        }
+    }
+}

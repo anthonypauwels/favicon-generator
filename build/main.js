@@ -2,7 +2,7 @@ const { app, BrowserWindow,  ipcMain, shell, Menu } = require('electron');
 const Generator = require('./includes/Generator');
 const path = require('path');
 
-const dev_mode = false;
+const dev_mode = true;
 
 let window;
 
@@ -18,6 +18,7 @@ function createWindow ()
         webPreferences: {
             nodeIntegration: true,
             contextIsolation: false,
+            nativeWindowOpen: false,
         },
     } );
 
@@ -41,11 +42,14 @@ const template = [
         label: 'File',
         submenu: [
             { label: 'Theme', submenu: [
-                { label: 'Regular Theme', click: () => {
-                    window.webContents.send('theme', 'regular-theme');
+                { label: 'Dark Theme', click: () => {
+                    window.webContents.send('theme', 'dark-theme');
                 } },
-                { label: 'Make It Pulp', click: () => {
-                    window.webContents.send('theme', 'cherry-pulp');
+                { label: 'Light Theme', click: () => {
+                    window.webContents.send('theme', 'light-theme');
+                } },
+                { label: 'User Preference', click: () => {
+                    window.webContents.send('theme', 'user-preference');
                 } },
             ] },
             { type: 'separator' },

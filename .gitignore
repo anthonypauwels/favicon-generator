@@ -89,3 +89,4 @@ db/
 bin/
 conf/
 tmp/
+dist/

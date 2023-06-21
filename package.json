@@ -1,14 +1,19 @@
 {
   "name": "favicon-generator",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple favicon generator",
   "author": "Anthony Pauwels <hello@anthonypauwels.be>",
   "license": "ISC",
   "homepage": "./",
   "main": "./build/main.js",
   "keywords": [
-    "favicon", "generator"
+    "favicon",
+    "generator"
   ],
+  "engines": {
+    "npm": ">=9.0.0",
+    "node": ">=18.0.0"
+  },
   "build": {
     "appId": "be.anthonypauwels.favicon-generator",
     "productName": "Favicon Generator",
@@ -45,7 +50,7 @@
     "laravel-mix": "^6.0.31",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
-    "electron-builder": "^22.13.1"
+    "electron-builder": "^24.4.0"
   },
   "dependencies": {
     "sharp": "^0.29.1",

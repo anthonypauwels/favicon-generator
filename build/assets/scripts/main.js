@@ -13,14 +13,14 @@ const linkTheme = find('#link-theme');
 function changeTheme(theme)
 {
     storage.set('theme', theme );
-    linkTheme.setAttribute('href', 'styles/' + theme + '.css');
+    linkTheme.setAttribute('href', './styles/' + theme + '.css');
 }
 
 ipcRenderer.on('theme', ( event, theme ) => {
     changeTheme( theme );
 } );
 
-changeTheme( storage.get('theme', 'regular-theme' ) );
+changeTheme( storage.get('theme', 'user-preference' ) );
 
 const zipFolder = find('#zip-folder');
 
